@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NightOff Support</title>
+    <title>NightOff - Screen Blocker</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1, h2 { color: #000; }
+        :root { --bg: #ffffff; --text: #1d1d1f; --secondary: #86868b; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; line-height: 1.5; max-width: 800px; margin: 0 auto; padding: 60px 20px; color: var(--text); background: var(--bg); }
+        header { margin-bottom: 60px; text-align: center; }
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 10px; }
+        .tagline { font-size: 24px; color: var(--secondary); margin-bottom: 20px; }
+        .promo { font-size: 18px; font-weight: 500; border-left: 3px solid var(--text); padding-left: 20px; margin: 40px 0; }
+        section { margin-bottom: 50px; }
+        h2 { font-size: 28px; margin-bottom: 20px; }
+        h3 { font-size: 20px; margin-bottom: 10px; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        @media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } }
+        .feature-item p { color: var(--secondary); font-size: 16px; margin-top: 5px; }
+        footer { margin-top: 100px; padding-top: 20px; border-top: 1px solid #d2d2d7; font-size: 14px; color: var(--secondary); }
+        .contact-btn { display: inline-block; background: #000; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 8px; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>NightOff Support</h1>
-    <p>Stop the late-night loop.</p>
 
-    <h2>Contact Us</h2>
-    <p>If you need assistance or have any feedback, please reach out to us at:</p>
-    <p><strong>Email:</strong> [在此填入你的支持邮箱]</p>
+<header>
+    <h1>NightOff</h1>
+    <p class="tagline">Stop the late-night inner friction.</p>
+</header>
 
+<section>
+    <p class="promo">Stop mindless browsing. NightOff is a firm but gentle screen blocker that helps you end the night in peace. Good job tonight, see you tomorrow.</p>
+</section>
+
+<section>
+    <h2>About NightOff</h2>
+    <p>Every night, you negotiate with yourself. One more video. Five more minutes. It is a negotiation you lose every day. NightOff ends that cycle.</p>
+    <p>NightOff is a screen blocker for your Mac. It does not use health warnings, productivity tracking, or gamified rewards. It simply stops the late-night inner friction by blocking your screen at the scheduled time.</p>
+</section>
+
+<section>
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>Sunset Fade</h3>
+            <p>Your screen darkens slowly 30 minutes before bed, signaling a natural time to wrap up your tasks.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Firm Block</h3>
+            <p>The app blocks access to your screen to break the autopilot browsing habit and end the day's friction.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Mindful Delays</h3>
+            <p>If you must delay the rest, NightOff ensures you make that choice consciously, not on autopilot.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Peaceful Rest</h3>
+            <p>A warm, judgment-free interface that helps you put the day to rest without guilt.</p>
+        </div>
+    </div>
+</section>
+
+<section id="support">
+    <h2>Support</h2>
+    <p>If you need assistance or have any feedback, please reach out to us:</p>
+    <a href="mailto:[你的邮箱地址]" class="contact-btn">Email Support</a>
+</section>
+
+<footer id="privacy">
     <h2>Privacy Policy</h2>
     <p>NightOff operates entirely on your local device. We do not collect, store, or transmit any of your personal data or usage metrics. Your screen activity remains strictly private.</p>
+    <p>&copy; 2026 NightOff. Turn the night off, and give it back to yourself.</p>
+</footer>
+
 </body>
 </html>
